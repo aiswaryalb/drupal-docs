@@ -1,15 +1,15 @@
-📼 How to Get Video Duration in Drupal Using getID3
 
-In this note, we’ll cover how to use the getID3 PHP library in Drupal to extract the duration of a video file and make it accessible in a Twig template.
+## 📦 1. Install getID3 via Composer
 
-📦 1. Install getID3 via Composer
+To get started, install the **getID3** library using Composer:
+
+```bash
 composer require james-heinrich/getid3
+```
 
-🧠 2. Add Logic to example.theme
+## 🧠 2. In your theme’s .theme file (e.g., example.theme), add the following logic inside example_preprocess_node():
 
-In your theme’s .theme file (e.g., example.theme), add the following logic inside example_preprocess_node():
-
-use getID3;
+```bash
 use Drupal\file\Entity\File;
 
 function example_preprocess_node(&$variables) {
@@ -44,9 +44,11 @@ function example_preprocess_node(&$variables) {
     $variables['video_duration'] = $video_duration;
   }
 }
+```
 
-🖼️ 3. Display in Twig
+## 🖼️ 3. Display in Twig
 
 Now that the video duration is passed to the template, you can render it in your node Twig template like this:
-
+```bash
 <p>Video Duration: {{ video_duration }}</p>
+```
