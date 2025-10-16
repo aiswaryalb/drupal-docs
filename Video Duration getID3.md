@@ -1,3 +1,4 @@
+# Getting Video Duration using getID3
 
 ## 📦 1. Install getID3 via Composer
 
