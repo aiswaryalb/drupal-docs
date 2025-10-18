@@ -4,6 +4,8 @@ In Drupal, **cron** runs only when the website is visited by a user. To ensure t
 
 ## 📅 Adding Cron Jobs
 
+By default, Drupal triggers cron when a user visits the site (if automated cron is enabled in settings), but this is not reliable for regular execution, especially on low-traffic sites.
+
 To initiate cron in Drupal, follow these steps:
 
 1. **Find the Cron URL**: Go to **/admin/config/system/cron** to find the cron link you need to use.
