@@ -16,7 +16,6 @@
    ```bash
    ssh -i "ubuntu.pem" ubuntu@ec2-13-61-148-126.eu-north-1.compute.amazonaws.com
    ```
-     <img width="813" height="530" alt="image" src="https://github.com/user-attachments/assets/74929ee8-b8a7-43fe-89be-c2701f81d062" />
    ### SSH Command
 4. Set Permissions on PEM File
     ```bash
