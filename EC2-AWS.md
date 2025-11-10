@@ -96,6 +96,66 @@
     ```bash
     sudo service nginx reload
     ```
+## Install PHP and Connecting to DB
+
+1. Update and Upgrade Your System
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   ```
+2. Install MySQL Server
+   ```bash
+   sudo apt install mysql-server -y
+   ```
+   After installation, secure it:
+   ```bash
+   sudo mysql_secure_installation
+   ```
+4. Verify MySQL is Running
+   ```
+   sudo systemctl status mysql
+   ```
+   If not running:
+   ```
+   sudo systemctl start mysql
+   sudo systemctl enable mysql
+   ```
+6. Log in to MySQL
+   ```
+   sudo mysql
+   ```
+   You can create a new database and user for your PHP
+   ```
+   CREATE DATABASE myapp_db;
+   CREATE USER 'myapp_user'@'localhost' IDENTIFIED BY 'strongpassword';
+   GRANT ALL PRIVILEGES ON myapp_db.* TO 'myapp_user'@'localhost';
+   FLUSH PRIVILEGES;
+   EXIT;
+   ```
+8. Below code can be added in php and checked
+   ```
+   <?php
+   $servername = "localhost";
+   $username = "myapp_user";
+   $password = "strongpassword";
+   $dbname = "myapp_db";
+   
+   $conn = new mysqli($servername, $username, $password, $dbname);
+   
+   if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+   }
+   echo "Connected successfully to MySQL database!";
+   $conn->close();
+   ?>
+   ```
+
+## Troubleshooting Errors
+
+In Nginx on Ubuntu, error logs are usually stored in /var/log/nginx/
+| Type           | Default Path                |
+| -------------- | --------------------------- |
+| **Error log**  | `/var/log/nginx/error.log`  |
+| **Access log** | `/var/log/nginx/access.log` |
 
 
 
