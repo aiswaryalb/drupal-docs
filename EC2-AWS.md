@@ -35,6 +35,7 @@
    ```bash
    sudo service nginx status
     ```
+   Visit public IP address to see below(ensure it is http://)
    <img width="926" height="325" alt="image" src="https://github.com/user-attachments/assets/23e71129-1e55-4509-8c3f-f8ee6e3a56cc" />
 6. Reload Nginx Service
   ```bash
