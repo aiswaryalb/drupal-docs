@@ -1,13 +1,14 @@
-# drupal-docs
+# 📚 Drupal Development Notes
 
-This index page serves as a personal repository for notes and learnings related to Drupal development. Each link corresponds to specific topics I've explored, making it easier to revisit and reference important information.
+Welcome to my personal repository of insights and learnings related to **Drupal development**. This index serves as a handy reference for various topics I've explored, making it easier to revisit key information and share knowledge with others.
 
-# Index
+## 🗂️ Index
 
-- [Cron Jobs](Cron%20Jobs.md)
-- [Date in Twig](Date%20in%20Twig.md)
-- [Drupal 11 + Azure AD OpenID Connect Integration](Drupal%2011%20%2B%20Azure%20AD%20OpenID%20Connect%20Integration.md)
-- [Launch an EC2 Instance and Set Up Nginx with PHP](EC2-AWS.md)
-- [Paragraph Modal and Grouping in Drupal](Paragraph%20Modal.md)
-- [Getting Video Duration using getID3](Video%20Duration%20getID3.md)
+- **[Cron Jobs](Cron%20Jobs.md)**: Overview and best practices for implementing cron jobs in Drupal.
+- **[Date in Twig](Date%20in%20Twig.md)**: How to handle dates within Twig templates.
+- **[Drupal 11 + Azure AD OpenID Connect Integration](Drupal%2011%20%2B%20Azure%20AD%20OpenID%20Connect%20Integration.md)**: Steps to integrate Azure AD with Drupal 11 for OpenID authentication.
+- **[Launch an EC2 Instance and Set Up Nginx with PHP](EC2-AWS.md)**: Guide for deploying an EC2 instance and configuring Nginx and PHP.
+- **[Paragraph Modal and Grouping in Drupal](Paragraph%20Modal.md)**: Techniques to implement paragraph modals and grouping features.
+- **[Getting Video Duration using getID3](Video%20Duration%20getID3.md)**: Method for retrieving the duration of videos with the getID3 library.
 
+Feel free to explore each topic for more detailed information!
