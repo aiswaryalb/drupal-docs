@@ -137,10 +137,6 @@ docker push  <username>/drupal-k8s:latest
 ## 4. MySQL Secret
 
 ```
-kubectl create secret generic mysql-secret --from-literal=password=drupal
-```
-
-```
 kubectl get secrets
 kubectl describe secret mysql-secret
 kubectl get secret mysql-secret -o jsonpath="{.data.password}" | base64 --decode
