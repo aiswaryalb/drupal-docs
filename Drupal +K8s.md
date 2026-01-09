@@ -335,3 +335,15 @@ minikube service drupal
   kubectl rollout restart deployment/mysql
   kubectl rollout restart deployment/drupal
   ```
+  - Enter the MySQL pod via
+    ```
+    kubectl exec -it mysql-ccc67c897-cj462 -- mysql -u root -p
+    ```
+
+### 10. Delete Drupal deployment and service
+    ```
+    kubectl delete deployment mysql drupal
+    kubectl delete service drupal mysql
+    kubectl delete pvc mysql-pvc
+    kubectl delete secret mysql-secret
+    ```
