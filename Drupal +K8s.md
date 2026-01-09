@@ -304,46 +304,45 @@ minikube service drupal
 ## 9. Kubernetes Basics to Test
 
   - Check pods
-  ```
-  kubectl get pods
-  ```
+      ```
+      kubectl get pods
+      ```
 
   - Scale deployment
-  ```
-  kubectl scale deployment drupal --replicas=2
-  ```
+      ```
+      kubectl scale deployment drupal --replicas=2
+      ```
   
   - Delete a pod and watch auto-replacement
-  ```
-  kubectl delete pod drupal-<pod-name>
-  kubectl get pods -w
-  ```
+      ```
+      kubectl delete pod drupal-<pod-name>
+      kubectl get pods -w
+      ```
   
   - Rolling update (change image)
-  ```
-  kubectl set image deployment/drupal drupal=yourdockerhubusername/drupal-k8s:latest
-  kubectl rollout status deployment/drupal
-  ```
+      ```
+      kubectl set image deployment/drupal drupal=yourdockerhubusername/drupal-k8s:latest
+      kubectl rollout status deployment/drupal
+      ```
   
   - MySQL failover test (Drupal will fail if DB is down)
-  ```
-  kubectl delete pod mysql-<pod-name>
-  ```
+      ```
+      kubectl delete pod mysql-<pod-name>
+      ```
 
   - Restart
-  ```
-  kubectl rollout restart deployment/mysql
-  kubectl rollout restart deployment/drupal
-  ```
+      ```
+      kubectl rollout restart deployment/mysql
+      kubectl rollout restart deployment/drupal
+      ```
   - Enter the MySQL pod via
     ```
     kubectl exec -it mysql-ccc67c897-cj462 -- mysql -u root -p
     ```
 
 ### 10. Delete Drupal deployment and service
-    ```
+    
     kubectl delete deployment mysql drupal
     kubectl delete service drupal mysql
     kubectl delete pvc mysql-pvc
     kubectl delete secret mysql-secret
-    ```
