@@ -346,3 +346,11 @@ minikube service drupal
     kubectl delete service drupal mysql
     kubectl delete pvc mysql-pvc
     kubectl delete secret mysql-secret
+
+### 11. Cleanup Check
+    kubectl get pods
+    kubectl get deployments
+    kubectl get services
+    kubectl get secrets
+    kubectl get pvc
+
