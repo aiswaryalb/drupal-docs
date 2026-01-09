@@ -134,13 +134,19 @@ docker login -u <username>
 docker push  <username>/drupal-k8s:latest
 ```
 
-MySQL Secret
+## 4. MySQL Secret
 
 ```
 kubectl create secret generic mysql-secret --from-literal=password=drupal
 ```
 
-## 4. Drupal Deployment
+```
+kubectl get secrets
+kubectl describe secret mysql-secret
+kubectl get secret mysql-secret -o jsonpath="{.data.password}" | base64 --decode
+```
+
+## 5. Drupal Deployment
 k8s/drupal-deployment.yaml
 ```
 apiVersion: apps/v1
@@ -189,7 +195,7 @@ spec:
   type: NodePort
 
 ```
-## 5. MySQL Deployment
+## 6. MySQL Deployment
 k8s/mysql-deployment.yaml
 ```
 apiVersion: v1
@@ -267,7 +273,7 @@ spec:
 
 ```
 
-## 6. Apply Deployments
+## 7. Apply Deployments
 ```
 kubectl get pods
 kubectl get svc
@@ -280,7 +286,7 @@ kubectl get svc
 kubectl get svc drupal
 ```
 
-## 7. Drupal Installation Page
+## 8. Drupal Installation Page
 
 Use these details:
 
@@ -295,7 +301,7 @@ Access the site via:
 minikube service drupal
 ```
 
-## 8. Kubernetes Basics to Test
+## 9. Kubernetes Basics to Test
 
   - Check pods
   ```
