@@ -10,5 +10,6 @@ Welcome to my personal repository of insights and learnings related to **Drupal 
 - **[Launch an EC2 Instance and Set Up Nginx with PHP](EC2-AWS.md)**: Guide for deploying an EC2 instance and configuring Nginx and PHP.
 - **[Paragraph Modal and Grouping in Drupal](Paragraph%20Modal.md)**: Techniques to implement paragraph modals and grouping features.
 - **[Getting Video Duration using getID3](Video%20Duration%20getID3.md)**: Method for retrieving the duration of videos with the getID3 library.
+- **[Kubernetes](https://github.com/aiswaryalb/drupal-docs/blob/main/K8s.md)**: Kubernetes cheatsheet - yaml files and commands
 
 Feel free to explore each topic for more detailed information!
