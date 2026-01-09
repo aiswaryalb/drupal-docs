@@ -324,10 +324,8 @@ minikube service drupal
   kubectl delete pod mysql-<pod-name>
   ```
 
-  - Update secrets and restart deployments
+  - Restart
   ```
-  kubectl delete secret mysql-secret
-  kubectl create secret generic mysql-secret --from-literal=password=NewPassword
   kubectl rollout restart deployment/mysql
   kubectl rollout restart deployment/drupal
   ```
