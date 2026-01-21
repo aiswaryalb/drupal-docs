@@ -12,5 +12,7 @@ Welcome to my personal repository of insights and learnings related to **Drupal 
 - **[Getting Video Duration using getID3](Video%20Duration%20getID3.md)**: Method for retrieving the duration of videos with the getID3 library.
 - **[Kubernetes](https://github.com/aiswaryalb/drupal-docs/blob/main/K8s.md)**: Kubernetes cheatsheet - yaml files and commands
 - **[K8s + Drupal + MySQL](https://github.com/aiswaryalb/drupal-docs/blob/main/Drupal%20%2BK8s.md)** - Deploy a Drupal project with MySQL on Minikube using Docker images and Kubernetes.
+- JS
+  -  **[Basic JS - 01](https://github.com/aiswaryalb/drupal-docs/blob/main/Basic%20JS.md)** - Basic js syntax , code examples
 
 Feel free to explore each topic for more detailed information!
