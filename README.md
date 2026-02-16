@@ -14,5 +14,6 @@ Welcome to my personal repository of insights and learnings related to **Drupal 
 - **[K8s + Drupal + MySQL](https://github.com/aiswaryalb/drupal-docs/blob/main/Drupal%20%2BK8s.md)** - Deploy a Drupal project with MySQL on Minikube using Docker images and Kubernetes.
 - JS
   -  **[Basic JS - 01](https://github.com/aiswaryalb/drupal-docs/blob/main/Basic%20JS.md)** - Basic js syntax , code examples
+- **[Deploying a Vite + React App to GitHub Pages](https://github.com/aiswaryalb/drupal-docs/blob/main/Deploy%20React%20in%20Github%20Pages.md)** : This guide explains how to deploy a React project (created using Vite) to GitHub Pages.
 
 Feel free to explore each topic for more detailed information!
