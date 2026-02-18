@@ -7,6 +7,7 @@ Welcome to my personal repository of insights and learnings related to **Drupal 
 - **[Cron Jobs](Cron%20Jobs.md)**: Overview and best practices for implementing cron jobs in Drupal.
 - **[Date in Twig](Date%20in%20Twig.md)**: How to handle dates within Twig templates.
 - **[Webform Libraries Installation Guide](https://github.com/aiswaryalb/drupal-docs/blob/main/Webform%20Libraries%20Installation%20Guide.md)** : Provides instructions for downloading and installing external libraries for the Webform module in Drupal.
+- **[Update Modules - Drupal](https://github.com/aiswaryalb/drupal-docs/blob/main/Update%20Modules%20-%20Drupal)** - Instructions to update module in drupal.
 - **[Drupal 11 + Azure AD OpenID Connect Integration](Drupal%2011%20%2B%20Azure%20AD%20OpenID%20Connect%20Integration.md)**: Steps to integrate Azure AD with Drupal 11 for OpenID authentication.
 - **[Launch an EC2 Instance and Set Up Nginx with PHP](EC2-AWS.md)**: Guide for deploying an EC2 instance and configuring Nginx and PHP.
 - **[Paragraph Modal and Grouping in Drupal](Paragraph%20Modal.md)**: Techniques to implement paragraph modals and grouping features.
