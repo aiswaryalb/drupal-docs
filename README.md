@@ -14,8 +14,9 @@ Welcome to my personal repository of insights and learnings related to **Drupal 
 - **[Getting Video Duration using getID3](Video%20Duration%20getID3.md)**: Method for retrieving the duration of videos with the getID3 library.
 - **[Kubernetes](https://github.com/aiswaryalb/drupal-docs/blob/main/K8s.md)**: Kubernetes cheatsheet - yaml files and commands
 - **[K8s + Drupal + MySQL](https://github.com/aiswaryalb/drupal-docs/blob/main/Drupal%20%2BK8s.md)** - Deploy a Drupal project with MySQL on Minikube using Docker images and Kubernetes.
-- JS
+- **JS**
   -  **[Basic JS - 01](https://github.com/aiswaryalb/drupal-docs/blob/main/Basic%20JS.md)** - Basic js syntax , code examples
-- **[Deploying a Vite + React App to GitHub Pages](https://github.com/aiswaryalb/drupal-docs/blob/main/Deploy%20React%20in%20Github%20Pages.md)** : This guide explains how to deploy a React project (created using Vite) to GitHub Pages.
+- **React**
+  - **[Deploying a Vite + React App to GitHub Pages](https://github.com/aiswaryalb/drupal-docs/blob/main/Deploy%20React%20in%20Github%20Pages.md)** : This guide explains how to deploy a React project (created using Vite) to GitHub Pages.
 
 Feel free to explore each topic for more detailed information!
